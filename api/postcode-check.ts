@@ -34,7 +34,7 @@ const handler: NowApiHandler = async (req, res) => {
       codes = await cache.promise
     }
 
-    res.setHeader('Cache-Controle', 'max-age=86400')
+    res.setHeader('Cache-Control', 'max-age=86400')
     res.send({ codes })
   }
 
